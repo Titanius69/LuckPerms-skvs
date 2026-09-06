@@ -1,0 +1,16 @@
+{
+  "required": true,
+  "package": "me.lucko.luckperms.fabric.mixin",
+  "compatibilityLevel": "JAVA_8",
+  "mixins": [
+    "CommandsMixin",
+    "CommandSourceStackAccessor",
+    "ServerLoginPacketListenerImplAccessor",
+    "ServerPlayerMixin"
+  ],
+  "client": [
+  ],
+  "injectors": {
+    "defaultRequire": 1
+  }
+}

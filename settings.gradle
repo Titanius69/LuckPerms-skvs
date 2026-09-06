@@ -1,0 +1,50 @@
+pluginManagement {
+    repositories {
+        gradlePluginPortal()
+        maven {
+            name = 'Fabric'
+            url = 'https://maven.fabricmc.net/'
+        }
+        maven {
+            name = 'Forge'
+            url = 'https://maven.minecraftforge.net/'
+        }
+    }
+}
+
+plugins {
+    id("org.gradle.toolchains.foojay-resolver-convention") version("1.0.0")
+}
+
+rootProject.name = 'luckperms'
+include (
+        'api',
+        'common',
+        'common:loader-utils',
+        'common:minecraft',
+        'common:placeholders',
+        'bukkit',
+        'bukkit:loader',
+        'bukkit-legacy',
+        'bukkit-legacy:loader',
+        'bungee',
+        'bungee:loader',
+        'fabric',
+        'neoforge',
+        'neoforge:loader',
+        'forge',
+        'forge:loader',
+        'nukkit',
+        'nukkit:loader',
+        'hytale',
+        'hytale:loader',
+        'hytale:loader-with-deps',
+        'sponge',
+        'sponge:loader',
+        'sponge:sponge-service',
+        'sponge:sponge-service-proxy',
+        'velocity',
+        'standalone',
+        'standalone:loader',
+        'standalone:app'
+)

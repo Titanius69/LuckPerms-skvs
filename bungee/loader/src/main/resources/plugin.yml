@@ -1,0 +1,6 @@
+name: LuckPerms
+version: ${pluginVersion}
+description: A permissions plugin
+author: Luck
+main: me.lucko.luckperms.bungee.loader.BungeeLoaderPlugin
+softDepends: ["RedisBungee"]
